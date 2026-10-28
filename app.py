@@ -263,6 +263,28 @@ def train_models(df):
     return results
 
 
+
+@st.cache_data(ttl=86400)
+def load_public_reason_dataset():
+    base = (
+        "https://huggingface.co/datasets/"
+        "aai510-group1/telco-customer-churn/resolve/main/"
+    )
+    frames = []
+    for split in ["train", "test", "validation"]:
+        url = f"{base}{split}.csv?download=true"
+        frames.append(pd.read_csv(url))
+
+    data = pd.concat(frames, ignore_index=True)
+
+    required = ["Churn", "Churn Reason", "Churn Category", "Customer ID"]
+    missing = [col for col in required if col not in data.columns]
+    if missing:
+        raise ValueError(f"Dataset is missing columns: {missing}")
+
+    return data
+
+
 # ------------------------------------------
 # Data source
 # ------------------------------------------
@@ -326,13 +348,22 @@ if st.session_state.uploaded_df is not None:
     data_source = "Uploaded CSV"
 elif Path("data/churn_reasons_dataset.csv").exists():
     raw_df = pd.read_csv("data/churn_reasons_dataset.csv")
-    data_source = "Extended telecom sample dataset with recorded reasons"
+    data_source = "Local extended telecom dataset"
 else:
-    raw_df = make_demo_data()
-    data_source = "Synthetic demonstration data"
+    try:
+        raw_df = load_public_reason_dataset()
+        data_source = "Public extended telecom dataset"
+    except Exception as exc:
+        st.error(
+            "Could not load the recorded-reasons dataset. "
+            "Check the internet connection and try again."
+        )
+        st.exception(exc)
+        st.stop()
 
-# Map extended dataset columns to the model's expected feature names.
-aliases = {
+
+# Map source dataset column names to the names used by ChurnRadar.
+column_aliases = {
     "Customer ID": "CustomerID",
     "Tenure in Months": "TenureMonths",
     "Monthly Charge": "MonthlyCharges",
@@ -340,9 +371,10 @@ aliases = {
     "Satisfaction Score": "SatisfactionScore",
     "Payment Method": "PaymentMethod"
 }
-for old_name, new_name in aliases.items():
-    if old_name in raw_df.columns and new_name not in raw_df.columns:
-        raw_df = raw_df.rename(columns={old_name: new_name})
+
+for source_col, target_col in column_aliases.items():
+    if source_col in raw_df.columns and target_col not in raw_df.columns:
+        raw_df = raw_df.rename(columns={source_col: target_col})
 
 # Standardise target values when supplied
 if TARGET in raw_df.columns:
