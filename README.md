@@ -1,25 +1,29 @@
-﻿# ChurnRadar 🎯
-### Customer Churn Prediction & Retention Analytics
+﻿# 🎯 ChurnRadar
+## Customer Churn Prediction and Retention Analytics Using Machine Learning
 
-ChurnRadar is a machine-learning-powered dashboard designed to
-analyse customer churn, explore recorded reasons why customers
-left, and help businesses plan customer-retention activities.
+ChurnRadar is a Python-based machine learning application that analyses customer churn, explores recorded reasons why customers leave, and helps businesses make better customer retention decisions.
 
-## Features
+### 🚀 Project Links
 
-- Executive overview and customer analytics
+- **GitHub Repository:** https://github.com/SAILIKHITH243/ChurnRadar
+- **GitHub Profile:** https://github.com/SAILIKHITH243
+- **Live Website:** https://churnradar-rwvogsqrmveycb37t7dp3i.streamlit.app
+
+Note: The Streamlit URL is the intended deployment address. It becomes a working public demo only after deployment succeeds.
+
+### ✨ Features
+
+- Customer analytics and interactive dashboard
 - Machine learning churn prediction
 - Customer risk prioritisation
-- Recorded churn reason analysis
-- Customer-level churn reason reports
-- Business insights from historical churn records
-- Suggested retention actions
-- Retention campaign cost and ROI simulator
-- Model performance evaluation
-- CSV report downloads
-- Interactive Streamlit and Plotly dashboard
+- Recorded customer churn reason analysis
+- Churn categories and business insights
+- Explainable AI and model-based explanations
+- Suggested customer retention actions
+- Retention campaign ROI simulator
+- Model evaluation and downloadable CSV reports
 
-## Technology Stack
+### 🛠️ Technologies Used
 
 - Python
 - Pandas and NumPy
@@ -28,66 +32,55 @@ left, and help businesses plan customer-retention activities.
 - Plotly
 - Git and GitHub
 
-## Dataset
+### 📊 Dataset
 
-This project uses a public sample telecommunications churn
-dataset from Hugging Face:
+The project uses a sample telecommunications customer churn dataset with historical churn information and recorded churn reasons.
 
+Dataset source:
 https://huggingface.co/datasets/aai510-group1/telco-customer-churn
 
-The combined local dataset currently contains 7,043 rows and
-52 columns, according to the local data preparation output.
+The local combined dataset was reported as 7,043 rows and 52 columns. The dataset is for educational analysis and does not represent live company customer records.
 
-The dataset represents a fictional telecommunications company.
-It is intended for educational analysis and is not live company data.
+### 💻 Run the Project Locally
 
-The raw CSV files are excluded from this repository until their
-redistribution terms have been confirmed. The recorded-reasons
-page requires the prepared file:
-
-`data/churn_reasons_dataset.csv`
-
-## Run Locally on Windows
-
-1. Install Python 3.10 or a compatible version.
-2. Open this project folder in Visual Studio Code.
-3. Open Terminal and run:
+Install Python, open the project folder in VS Code, and run these commands in PowerShell:
 
 ```powershell
-python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-4. Open the local URL displayed in your terminal.
+Open the local URL displayed in the terminal.
 
-## Project Limitations
+### 📈 Business Use Cases
+
+ChurnRadar can help teams investigate customer engagement, understand previously recorded churn reasons, prioritise customers for review, and explore possible retention campaign costs.
+
+### ⚠️ Limitations
 
 - Churn probabilities are estimates, not certainties.
-- Historical churn reasons describe customers who already left.
-- Recorded reasons do not establish causation.
-- Suggested retention actions require business validation.
-- Campaign ROI results depend on user-provided assumptions.
-- Synthetic demonstration results must not be presented as
-  real customer findings.
-- Model performance should be evaluated on held-out data.
+- Historical reasons describe customers who already left.
+- Model-based explanations are not confirmed customer reasons.
+- Suggested actions need validation.
+- ROI simulator values depend on user-defined assumptions.
+- Results must be validated before real-world business use.
 
-## Future Improvements
+### 👨‍💻 Author
 
-- Explainable machine-learning predictions
-- Improved customer-level reason reporting
-- Model threshold tuning and calibration
+**Name:** Sai Likhith
+
+**GitHub Profile:** https://github.com/SAILIKHITH243
+
+**Project:** ChurnRadar — Customer Churn Prediction and Retention Analytics
+
+### 🔮 Future Enhancements
+
+- Improved churn reason explanations
+- Customer feedback and complaint analysis
+- Better model calibration and evaluation
+- Online deployment and monitoring
 - Retention campaign experiments
-- Online dashboard deployment
-- Monitoring for data drift
 
-## Author
+---
 
-**Name:** Add your name here
-
-**GitHub:** Add your profile URL here
-
-## Disclaimer
-
-Educational portfolio project. Validate dataset permissions,
-model quality, privacy and business assumptions before real-world use.
+Educational portfolio project built to demonstrate Python, data analytics, machine learning, and dashboard development.
