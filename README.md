@@ -1,86 +1,100 @@
-﻿# 🎯 ChurnRadar
+﻿# ChurnRadar
 ## Customer Churn Prediction and Retention Analytics Using Machine Learning
 
-ChurnRadar is a Python-based machine learning application that analyses customer churn, explores recorded reasons why customers leave, and helps businesses make better customer retention decisions.
+ChurnRadar is a machine learning application designed to analyse customer behaviour, predict churn risk, explore recorded churn reasons, and support customer retention decisions.
 
-### 🚀 Project Links
+## Project Links
 
-- **GitHub Repository:** https://github.com/SAILIKHITH243/ChurnRadar
-- **GitHub Profile:** https://github.com/SAILIKHITH243
-- **Live Website:** https://churnradar-rwvogsqrmveycb37t7dp3i.streamlit.app
+- GitHub Repository: https://github.com/SAILIKHITH243/ChurnRadar
+- GitHub Profile: https://github.com/SAILIKHITH243
+- Live Application: https://churnradar-rwvogsqrmveycb37t7dp3i.streamlit.app/
 
-Note: The Streamlit URL is the intended deployment address. It becomes a working public demo only after deployment succeeds.
+Note: The application URL must be verified after successful deployment.
 
-### ✨ Features
+## Project Features
 
-- Customer analytics and interactive dashboard
-- Machine learning churn prediction
+- Interactive customer analytics dashboard
+- Customer churn prediction using machine learning
 - Customer risk prioritisation
-- Recorded customer churn reason analysis
-- Churn categories and business insights
-- Explainable AI and model-based explanations
-- Suggested customer retention actions
-- Retention campaign ROI simulator
-- Model evaluation and downloadable CSV reports
+- Historical churn reason analysis
+- Churn category and business insights
+- Model-based customer risk explanations
+- Recommended customer retention actions
+- Retention campaign cost and ROI simulator
+- Model performance evaluation
+- Downloadable CSV reports
 
-### 🛠️ Technologies Used
+## Technologies Used
 
 - Python
-- Pandas and NumPy
+- Pandas
+- NumPy
 - Scikit-learn
 - Streamlit
 - Plotly
-- Git and GitHub
+- Git
+- GitHub
 
-### 📊 Dataset
+## Dataset
 
-The project uses a sample telecommunications customer churn dataset with historical churn information and recorded churn reasons.
+The project uses a sample telecommunications customer churn dataset containing customer information and historical churn reasons.
 
 Dataset source:
 https://huggingface.co/datasets/aai510-group1/telco-customer-churn
 
-The local combined dataset was reported as 7,043 rows and 52 columns. The dataset is for educational analysis and does not represent live company customer records.
+The prepared local dataset was reported to contain 7,043 rows and 52 columns. It is sample data for educational analysis and does not represent live company customer records.
 
-### 💻 Run the Project Locally
+## Installation and Usage
 
-Install Python, open the project folder in VS Code, and run these commands in PowerShell:
+1. Install Python.
+2. Clone or download the repository.
+3. Open the project folder in Visual Studio Code.
+4. Open a terminal and install the dependencies:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m streamlit run app.py
+python -m pip install -r requirements.txt
 ```
 
-Open the local URL displayed in the terminal.
+5. Start the application:
 
-### 📈 Business Use Cases
+```powershell
+python -m streamlit run app.py
+```
 
-ChurnRadar can help teams investigate customer engagement, understand previously recorded churn reasons, prioritise customers for review, and explore possible retention campaign costs.
+6. Open the local URL displayed in the terminal.
 
-### ⚠️ Limitations
+## Business Applications
+
+ChurnRadar can help businesses understand historical customer churn, identify patterns in customer behaviour, prioritise customers for review, and evaluate possible retention campaign scenarios.
+
+Potential applications include telecommunications, subscription services, FinTech, and customer marketing analytics.
+
+## Limitations
 
 - Churn probabilities are estimates, not certainties.
-- Historical reasons describe customers who already left.
-- Model-based explanations are not confirmed customer reasons.
-- Suggested actions need validation.
-- ROI simulator values depend on user-defined assumptions.
-- Results must be validated before real-world business use.
+- Historical churn reasons describe customers who have already left.
+- Model-based explanations do not establish the actual reason a customer may leave.
+- Suggested retention actions require business validation.
+- ROI simulator results depend on user-provided assumptions.
+- Model performance must be evaluated using held-out test data.
+- Dataset permissions should be checked before redistributing source data.
 
-### 👨‍💻 Author
+## Future Improvements
 
-**Name:** Sai Likhith
-
-**GitHub Profile:** https://github.com/SAILIKHITH243
-
-**Project:** ChurnRadar — Customer Churn Prediction and Retention Analytics
-
-### 🔮 Future Enhancements
-
-- Improved churn reason explanations
+- Enhanced customer-level explanations
 - Customer feedback and complaint analysis
-- Better model calibration and evaluation
-- Online deployment and monitoring
+- Improved model calibration and evaluation
 - Retention campaign experiments
+- Online application monitoring
+- Model drift detection
 
----
+## Author
 
-Educational portfolio project built to demonstrate Python, data analytics, machine learning, and dashboard development.
+Sai Likhith
+
+GitHub Profile:
+https://github.com/SAILIKHITH243
+
+## Disclaimer
+
+This project was developed for educational and portfolio purposes. Model predictions and business recommendations should be validated before real-world use.
