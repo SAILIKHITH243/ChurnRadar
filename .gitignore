@@ -1,0 +1,25 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local secrets
+.env
+.streamlit/secrets.toml
+
+# Local customer data: check redistribution rights first
+data/*.csv
+
+# Generated model files
+models/*.joblib
+models/*.pkl
+
+# Backups and temporary patch scripts
+app_before*.py
+*.before_explainable_ai.py
+fix_*.py
+add_*.py
+
+# Editor/system files
+.vscode/
+.DS_Store
