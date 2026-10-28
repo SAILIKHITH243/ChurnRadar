@@ -7,7 +7,7 @@ ChurnRadar is a Python-based application that analyses customer behaviour, estim
 
 - **GitHub Repository:** [SAILIKHITH243/ChurnRadar](https://github.com/SAILIKHITH243/ChurnRadar)
 - **Author Profile:** [Sai Likhith on GitHub](https://github.com/SAILIKHITH243)
-- **Live Application:** Deployment link will be added after the public Streamlit app is successfully verified.
+- **Live Application:** [Open ChurnRadar](https://churnradar-9ubjtjgnrrsvkrpygt3jrg.streamlit.app/)
 
 ## Features
 
