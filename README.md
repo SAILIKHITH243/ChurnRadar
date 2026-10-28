@@ -1,4 +1,4 @@
-﻿# ChurnRadar 🎯
+﻿# ChurnRadar 
 ### Customer Churn Prediction & Retention Analytics
 
 ChurnRadar is a machine-learning-powered dashboard designed to
