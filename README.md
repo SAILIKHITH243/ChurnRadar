@@ -1,28 +1,28 @@
-﻿# ChurnRadar
+# ChurnRadar
 ## Customer Churn Prediction and Retention Analytics Using Machine Learning
 
-ChurnRadar is a Python-based application that analyses customer behaviour, predicts churn risk, and explores recorded reasons why customers have left a service.
+ChurnRadar is a Python-based application that analyses customer behaviour, estimates churn risk, explores recorded reasons why customers have already left, and supports customer-retention planning.
 
 ## Project Links
 
-- GitHub Repository: https://github.com/SAILIKHITH243/ChurnRadar
-- Author Profile: https://github.com/SAILIKHITH243
-- Live Application: Deployment pending verification
+- **GitHub Repository:** [SAILIKHITH243/ChurnRadar](https://github.com/SAILIKHITH243/ChurnRadar)
+- **Author Profile:** [Sai Likhith on GitHub](https://github.com/SAILIKHITH243)
+- **Live Application:** Deployment link will be added after the public Streamlit app is successfully verified.
 
 ## Features
 
-- Customer analytics dashboard
-- Machine learning churn prediction
+- Interactive customer analytics dashboard
+- Machine-learning churn risk prediction
 - Customer risk prioritisation
 - Historical churn reason analysis
 - Business insights from recorded churn reasons
-- Model-based customer risk explanations
-- Suggested retention actions
-- Retention campaign cost and ROI simulator
+- Model-based explanations of prediction factors
+- Suggested customer-retention actions
+- Retention campaign cost and ROI scenario simulator
 - Model performance evaluation
-- CSV report downloads
+- Downloadable CSV reports
 
-## Technologies
+## Technologies Used
 
 - Python
 - Pandas and NumPy
@@ -33,47 +33,44 @@ ChurnRadar is a Python-based application that analyses customer behaviour, predi
 
 ## Dataset
 
-The project uses a sample telecommunications customer churn dataset containing customer information and historical churn reasons.
+This project uses a sample telecommunications customer churn dataset containing customer information and historical churn reasons.
 
-Dataset source:
-https://huggingface.co/datasets/aai510-group1/telco-customer-churn
+Dataset source: [Telco Customer Churn on Hugging Face](https://huggingface.co/datasets/aai510-group1/telco-customer-churn)
 
-The locally prepared dataset was reported to contain 7,043 rows and 52 columns. The data is for educational analysis and does not represent live company customer records.
+The local preparation output reported 7,043 rows and 52 columns. This is sample data for educational analysis and does not represent live company customer records.
 
 ## Installation and Usage
 
 1. Install Python.
 2. Open the ChurnRadar folder in Visual Studio Code.
 3. Open a PowerShell terminal.
-4. Install the required libraries:
+4. Install the dependencies:
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-5. Start the application:
+5. Run the application:
 
 ```powershell
 python -m streamlit run app.py
 ```
 
-6. Open the local URL displayed in the terminal.
+6. Open the local URL printed in the terminal.
 
 ## Business Applications
 
-ChurnRadar helps businesses explore historical churn patterns, identify customers for review, understand recorded reasons for customer departure, and evaluate possible retention campaign scenarios.
-
-Potential application areas include telecommunications, subscription services, FinTech, and marketing analytics.
+ChurnRadar can help teams explore historical churn patterns, identify customers for review, understand recorded reasons for customer departure, and compare potential retention campaign scenarios. Possible application areas include telecommunications, subscription services, FinTech, and marketing analytics.
 
 ## Limitations
 
 - Churn probabilities are estimates, not certainties.
-- Historical reasons describe customers who have already left.
-- Model-based explanations do not establish actual customer reasons.
+- Historical churn reasons describe customers who have already left.
+- Model-based explanations do not prove the actual reason a customer may leave.
 - Suggested retention actions require business validation.
-- ROI calculations depend on user-provided assumptions.
+- ROI simulator outputs depend on user-provided assumptions.
 - Model performance must be evaluated on held-out data.
-- Dataset redistribution permissions should be checked before publishing raw data.
+- Dataset redistribution terms should be checked before publishing raw data.
 
 ## Future Improvements
 
@@ -81,14 +78,13 @@ Potential application areas include telecommunications, subscription services, F
 - Customer feedback and complaint analysis
 - Model calibration and performance monitoring
 - Retention campaign experiments
-- Online application deployment
+- Public application deployment and monitoring
 
 ## Author
 
 **Sai Likhith**
 
-GitHub Profile:
-https://github.com/SAILIKHITH243
+GitHub Profile: [https://github.com/SAILIKHITH243](https://github.com/SAILIKHITH243)
 
 ## Disclaimer
 
