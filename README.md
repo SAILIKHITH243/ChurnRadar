@@ -1,39 +1,35 @@
 ﻿# ChurnRadar
 ## Customer Churn Prediction and Retention Analytics Using Machine Learning
 
-ChurnRadar is a machine learning application designed to analyse customer behaviour, predict churn risk, explore recorded churn reasons, and support customer retention decisions.
+ChurnRadar is a Python-based application that analyses customer behaviour, predicts churn risk, and explores recorded reasons why customers have left a service.
 
 ## Project Links
 
 - GitHub Repository: https://github.com/SAILIKHITH243/ChurnRadar
-- GitHub Profile: https://github.com/SAILIKHITH243
-- Live Application: https://churnradar-rwvogsqrmveycb37t7dp3i.streamlit.app/
+- Author Profile: https://github.com/SAILIKHITH243
+- Live Application: Deployment pending verification
 
-Note: The application URL must be verified after successful deployment.
+## Features
 
-## Project Features
-
-- Interactive customer analytics dashboard
-- Customer churn prediction using machine learning
+- Customer analytics dashboard
+- Machine learning churn prediction
 - Customer risk prioritisation
 - Historical churn reason analysis
-- Churn category and business insights
+- Business insights from recorded churn reasons
 - Model-based customer risk explanations
-- Recommended customer retention actions
+- Suggested retention actions
 - Retention campaign cost and ROI simulator
 - Model performance evaluation
-- Downloadable CSV reports
+- CSV report downloads
 
-## Technologies Used
+## Technologies
 
 - Python
-- Pandas
-- NumPy
+- Pandas and NumPy
 - Scikit-learn
 - Streamlit
 - Plotly
-- Git
-- GitHub
+- Git and GitHub
 
 ## Dataset
 
@@ -42,14 +38,14 @@ The project uses a sample telecommunications customer churn dataset containing c
 Dataset source:
 https://huggingface.co/datasets/aai510-group1/telco-customer-churn
 
-The prepared local dataset was reported to contain 7,043 rows and 52 columns. It is sample data for educational analysis and does not represent live company customer records.
+The locally prepared dataset was reported to contain 7,043 rows and 52 columns. The data is for educational analysis and does not represent live company customer records.
 
 ## Installation and Usage
 
 1. Install Python.
-2. Clone or download the repository.
-3. Open the project folder in Visual Studio Code.
-4. Open a terminal and install the dependencies:
+2. Open the ChurnRadar folder in Visual Studio Code.
+3. Open a PowerShell terminal.
+4. Install the required libraries:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -65,36 +61,35 @@ python -m streamlit run app.py
 
 ## Business Applications
 
-ChurnRadar can help businesses understand historical customer churn, identify patterns in customer behaviour, prioritise customers for review, and evaluate possible retention campaign scenarios.
+ChurnRadar helps businesses explore historical churn patterns, identify customers for review, understand recorded reasons for customer departure, and evaluate possible retention campaign scenarios.
 
-Potential applications include telecommunications, subscription services, FinTech, and customer marketing analytics.
+Potential application areas include telecommunications, subscription services, FinTech, and marketing analytics.
 
 ## Limitations
 
 - Churn probabilities are estimates, not certainties.
-- Historical churn reasons describe customers who have already left.
-- Model-based explanations do not establish the actual reason a customer may leave.
+- Historical reasons describe customers who have already left.
+- Model-based explanations do not establish actual customer reasons.
 - Suggested retention actions require business validation.
-- ROI simulator results depend on user-provided assumptions.
-- Model performance must be evaluated using held-out test data.
-- Dataset permissions should be checked before redistributing source data.
+- ROI calculations depend on user-provided assumptions.
+- Model performance must be evaluated on held-out data.
+- Dataset redistribution permissions should be checked before publishing raw data.
 
 ## Future Improvements
 
-- Enhanced customer-level explanations
+- Improved customer-level explanations
 - Customer feedback and complaint analysis
-- Improved model calibration and evaluation
+- Model calibration and performance monitoring
 - Retention campaign experiments
-- Online application monitoring
-- Model drift detection
+- Online application deployment
 
 ## Author
 
-Sai Likhith
+**Sai Likhith**
 
 GitHub Profile:
 https://github.com/SAILIKHITH243
 
 ## Disclaimer
 
-This project was developed for educational and portfolio purposes. Model predictions and business recommendations should be validated before real-world use.
+This project was developed for educational and portfolio purposes. Predictions and recommendations should be validated before real-world use.
